@@ -5,15 +5,19 @@ const Profile = ({FullName,bio,profession,children}) => {
     e.preventDefault();
     alert("Full Name: "+ FullName + " bio: "+ bio +" Job: "+ profession);
   };
-  console.log('propos :', children);
+  console.log('propos :', FullName);
   return (
     <>
-      <img alt ="" src = {children}/>
+      <img alt ="king" src = {children} style={{maxWidth: "100%", height: "150px"}}/>
       <a href="/" onClick={handleName}>
         Click
       </a>
     </>
   );
 };
-
+Profile.defaultProps = {
+  FullName: "Rochdi Bouhlel",
+  bio : 'blablabalabalablabla',
+  profession: 'web developer'
+ };
 export default Profile;

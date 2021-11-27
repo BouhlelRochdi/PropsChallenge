@@ -5,7 +5,7 @@ import image from "./img.jpg";
 function App() {
   return (
     <div style={{textAlign: "center"}}>
-      <Profile FullName  bio='test blabla' profession='FullStack'>
+      <Profile FullName="Rochdi Bouhlel"  bio='test blabla' profession='FullStack'>
       {image}
       </Profile>
     </div> 
